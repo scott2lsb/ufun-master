@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/circleindex_info_item_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/circleistitembg"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/circleindex_item_hottips"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginTop="11dip"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <View
+            android:layout_width="0dip"
+            android:layout_height="0.3dip"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:background="@color/circleindex_line" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="bottom"
+            android:paddingLeft="11dip"
+            android:paddingRight="11dip"
+            android:text="@string/hot_circle"
+            android:textColor="@color/sub_heading_text"
+            android:textSize="@dimen/design_size_24" />
+
+        <View
+            android:layout_width="0dip"
+            android:layout_height="0.3dip"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:background="@color/circleindex_line" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="11dip"
+        android:layout_marginRight="11dip"
+        android:layout_marginTop="11dip"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:padding="11dip">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="11dip"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/circleindex_item_title"
+                    style="@style/titletext"
+                    android:text="ffffff" />
+
+                <TextView
+                    android:id="@+id/circleindex_item_subtitle"
+                    style="@style/titletext_sub"
+                    android:text="ffffff" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/circleindex_item_ifjoin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/addcircle"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/circleindex_item_imglin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <FrameLayout
+                style="@style/circleindex_item_imageview"
+                android:layout_marginRight="9dip">
+
+                <ImageView
+                    android:id="@+id/circleindex_item_img1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/login_line"
+                    android:scaleType="fitXY" />
+
+                <LinearLayout
+                    android:id="@+id/circleindex_item_imglin1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="9dip"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/circleindex_item_img_title1"
+                        style="@style/titletext20dip"
+                        android:singleLine="true" />
+
+                    <TextView
+                        android:id="@+id/circleindex_item_img_descrip1"
+                        style="@style/titletext16dip"
+                        android:maxLines="3" />
+                </LinearLayout>
+            </FrameLayout>
+
+            <FrameLayout
+                style="@style/circleindex_item_imageview"
+                android:layout_marginRight="9dip">
+
+                <ImageView
+                    android:id="@+id/circleindex_item_img2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/login_line"
+                    android:scaleType="fitXY" />
+
+                <LinearLayout
+                    android:id="@+id/circleindex_item_imglin2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dip"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/circleindex_item_img_title2"
+                        style="@style/titletext20dip"
+                        android:singleLine="true" />
+
+                    <TextView
+                        android:id="@+id/circleindex_item_img_descrip2"
+                        style="@style/titletext20dip"
+                        android:layout_height="match_parent"
+                        android:maxLines="2" />
+                </LinearLayout>
+            </FrameLayout>
+
+            <FrameLayout
+                style="@style/circleindex_item_imageview"
+                android:layout_marginRight="9dip">
+
+                <ImageView
+                    android:id="@+id/circleindex_item_img3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/login_line"
+                    android:scaleType="fitXY" />
+
+                <LinearLayout
+                    android:id="@+id/circleindex_item_imglin3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dip"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/circleindex_item_img_title3"
+                        style="@style/titletext20dip"
+                        android:layout_margin="2dip"
+                        android:singleLine="true" />
+
+                    <TextView
+                        android:id="@+id/circleindex_item_img_descrip3"
+                        style="@style/titletext16dip"
+                        android:layout_height="match_parent"
+                        android:maxLines="2" />
+                </LinearLayout>
+            </FrameLayout>
+
+            <FrameLayout style="@style/circleindex_item_imageview">
+
+                <ImageView
+                    android:id="@+id/circleindex_item_img4"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/login_line"
+                    android:scaleType="fitXY" />
+
+                <LinearLayout
+                    android:id="@+id/circleindex_item_imglin4"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dip"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/circleindex_item_img_title4"
+                        style="@style/titletext20dip"
+                        android:layout_margin="2dip"
+                        android:singleLine="true" />
+
+                    <TextView
+                        android:id="@+id/circleindex_item_img_descrip4"
+                        style="@style/titletext16dip"
+                        android:layout_height="match_parent"
+                        android:maxLines="2" />
+                </LinearLayout>
+            </FrameLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

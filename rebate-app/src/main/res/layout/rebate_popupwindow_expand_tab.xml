@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?><!-- 首页筛选 radio btn tab -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"
+    android:background="@drawable/rebate_listitem_bg_selector"
+    android:orientation="vertical">
+
+    <com.shengshi.rebate.ui.home.popup.DrawableCenterRadioButton
+        android:id="@+id/rebate_filter_category_tv"
+        style="@style/black_title.selector.16sp"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_gravity="center"
+        android:button="@null"
+        android:drawablePadding="5dp"
+        android:drawableRight="@drawable/rebate_dropdown_icon"
+        android:gravity="center"
+        android:singleLine="true" />
+
+    <ImageView
+        android:id="@+id/rebate_filter_bottom_indicator"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@drawable/rebate_item_search_bottom_line"
+        android:contentDescription="@null"
+        android:visibility="gone" />
+
+</LinearLayout>

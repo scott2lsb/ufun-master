@@ -1,0 +1,1 @@
+package com.shengshi.base.common;/** * <p>Title:       常量基类 * <p>Description: * <p>@author:  liaodl * <p>Copyright: Copyright (c) 2014 * <p>Company: @小鱼网 * <p>Create Time: 2014-10-8 * <p>@author: * <p>Update Time: * <p>Updater: * <p>Update Comments: */public class Constants {}

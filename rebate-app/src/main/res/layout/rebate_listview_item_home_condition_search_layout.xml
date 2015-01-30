@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#f6f6f6">
+
+    <TextView
+        android:id="@+id/rebate_home_condition_tv_name"
+        style="@style/black_title.selector.18sp.to_red"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:enabled="false"
+        android:gravity="left"
+        android:padding="10dp" />
+
+    <View
+        android:id="@+id/divider_line_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:layout_below="@id/rebate_home_condition_tv_name"
+        android:layout_marginLeft="10dp"
+        android:background="@color/list_divider_line"
+        android:visibility="gone" />
+
+</RelativeLayout>

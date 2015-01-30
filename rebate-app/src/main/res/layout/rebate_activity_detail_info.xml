@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_f8f8f8"
+    android:orientation="vertical">
+
+    <include layout="@layout/rebate_topbar" />
+
+    <include layout="@layout/widget_loading_bar_layout" />
+
+    <com.shengshi.base.widget.XScrollView
+        android:id="@+id/rebate_detail_xscrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:id="@+id/rebate_detail_xscrollview_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- 返利码视图view -->
+            <LinearLayout
+                android:id="@+id/rebate_detail_code_fragment_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" />
+
+            <!-- 购买视图view -->
+            <fragment
+                android:id="@+id/rebate_detail_info_buy_fragment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                class="com.shengshi.rebate.ui.detail.DetailBuyFragment"
+                android:tag="rebate_detail_info_buy_fragment" />
+
+            <!-- 评论视图view -->
+            <fragment
+                android:id="@+id/rebate_detail_info_comment_fragment"
+                android:name="com.shengshi.rebate.ui.detail.DetailCommentFragment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:tag="rebate_detail_info_comment_fragment" />
+
+            <!-- 使用提示视图view -->
+            <fragment
+                android:id="@+id/rebate_detail_info_tip_fragment"
+                android:name="com.shengshi.rebate.ui.detail.DetailTipFragment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:tag="rebate_detail_info_tip_fragment" />
+
+            <!-- 地图、电话视图view -->
+            <fragment
+                android:id="@+id/rebate_detail_info_map_fragment"
+                android:name="com.shengshi.rebate.ui.detail.DetailMapFragment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:tag="rebate_detail_info_map_fragment" />
+        </LinearLayout>
+    </com.shengshi.base.widget.XScrollView>
+
+</LinearLayout>

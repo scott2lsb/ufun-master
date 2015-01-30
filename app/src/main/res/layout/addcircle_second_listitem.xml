@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/addcard_secondlistitem"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/listitembg"
+    android:orientation="horizontal"
+    android:padding="10dip">
+
+    <com.shengshi.base.widget.roundimageview.CircleImageView
+        android:id="@+id/secondlistitem_iv"
+        android:layout_width="45dip"
+        android:layout_height="45dip"
+        android:layout_marginLeft="7dip"
+        android:layout_marginRight="7dip"
+        android:scaleType="centerCrop"
+        android:src="@drawable/avatar" />
+
+    <LinearLayout
+        android:layout_width="0dip"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="7dip"
+        android:layout_weight="1"
+        android:focusable="false"
+        android:gravity="left|center_vertical"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/secondlistitem_name_tv"
+            style="@style/titletext" />
+
+        <TextView
+            android:id="@+id/secondlistitem_subtitle_tv"
+            style="@style/titletext_sub"
+            android:singleLine="true" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/secondlistitem_join_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/add"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/secondlistitem_cancel_tv"
+        android:layout_width="80dip"
+        android:layout_height="30dp"
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/btn_gray"
+        android:gravity="center"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:textColor="@color/gray_text_selector"
+        android:textSize="@dimen/design_size_24"
+        android:visibility="gone" />
+
+</LinearLayout>

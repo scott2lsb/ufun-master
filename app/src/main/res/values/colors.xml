@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="main_tab_tv_grey">#aaaaaa</color>
+    <color name="main_tab_tv_active">#68d430</color>
+    <!-- 主色 蓝绿 -->
+    <color name="main_tab_tv_active_click">#d1f2c0</color>
+    <!-- 主色文字点击色 -->
+    <color name="stroke">#eeeeee</color>
+    <!-- 描边 -->
+    <color name="headding_text">#000000</color>
+    <!-- 标题文字黑色 -->
+    <color name="titlebar_text">#FFFFFF</color>
+    <!-- 标题栏文字，白色 -->
+    <color name="sub_heading_text">#7d7d7d</color>
+    <!-- 辅助文字颜色 -->
+    <color name="mine_top_bg">#F3F3F3</color>
+    <color name="clear_history_recorgbtn_bg">#F6f6f6</color>
+    <color name="list_item_normal">#FFFFFF</color>
+    <color name="list_item_press">#e2e3e3</color>
+    <color name="chat_input_top_line">#c8c8c8</color>
+    <color name="circleindex_line">#dcdcdc</color>
+    <color name="TextColorBlack">#FF000000</color>
+    <color name="reply_author_name">#FF68d430</color>
+    <color name="login_line">#e5e5e5</color>
+    <!-- 描边 -->
+    <color name="home_toptab_bg">#434343</color>
+    <!-- 头条顶部切换条背景色 -->
+    <color name="home_toptab_middle_line">#535353</color>
+    <!-- 头条顶部中间线的颜色 -->
+    <color name="city_letter">#959595</color>
+
+</resources>

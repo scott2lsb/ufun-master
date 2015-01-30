@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/pureheader_lin_quan"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/theme_topclick_bg"
+        android:orientation="horizontal"
+        android:padding="15dip">
+
+        <com.shengshi.base.widget.roundimageview.CircleImageView
+            android:id="@+id/pureheader_iv"
+            android:layout_width="45dip"
+            android:layout_height="45dip"
+            android:layout_marginLeft="7dip"
+            android:layout_marginRight="7dip"
+            android:scaleType="centerCrop"
+            android:src="@drawable/avatar" />
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="7dip"
+            android:layout_weight="1"
+            android:focusable="false"
+            android:gravity="left|center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/pureheader_nametv"
+                style="@style/titletext" />
+
+            <TextView
+                android:id="@+id/pureheader_titletv"
+                style="@style/titletext_sub" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/icon_indicate_more"
+            android:layout_gravity="center_vertical" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.3dip"
+        android:background="@color/gray" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/pureheader_activitylv"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/listitembg"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/icon_bang"
+                android:gravity="center"
+                android:text="@string/pure_activity"
+                android:textColor="@color/headding_text"
+                android:textSize="@dimen/design_size_24" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="0.3dip"
+            android:layout_height="match_parent"
+            android:background="@color/gray" />
+
+        <LinearLayout
+            android:id="@+id/pureheader_sginlv"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/listitembg"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/sign_icon"
+                android:gravity="center"
+                android:text="@string/sgin"
+                android:textColor="@color/headding_text"
+                android:textSize="@dimen/design_size_24" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="0.3dip"
+            android:layout_height="match_parent"
+            android:background="@color/gray" />
+
+        <LinearLayout
+            android:id="@+id/pureheader_searchv"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/listitembg"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/search_icon"
+                android:gravity="center"
+                android:text="@string/search"
+                android:textColor="@color/headding_text"
+                android:textSize="@dimen/design_size_24" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="0.3dip"
+            android:layout_height="match_parent"
+            android:background="@color/gray" />
+
+        <LinearLayout
+            android:id="@+id/pureheader_taglv"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/listitembg"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/tag_icon"
+                android:gravity="center"
+                android:text="@string/tag"
+                android:textColor="@color/headding_text"
+                android:textSize="@dimen/design_size_24" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/pureheader_buttomline"
+        android:layout_width="match_parent"
+        android:layout_height="0.3dip"
+        android:background="@color/gray" />
+
+    <TextView
+        android:id="@+id/pureheader_topfirsttv"
+        style="@style/titletext"
+        android:layout_gravity="center_vertical"
+        android:layout_margin="7dip"
+        android:drawableLeft="@drawable/top"
+        android:drawablePadding="3dip"
+        android:gravity="center_vertical"
+        android:paddingLeft="7dip"
+        android:paddingRight="7dip"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/pureheader_topsecndtv"
+        style="@style/titletext"
+        android:layout_marginLeft="7dip"
+        android:layout_marginRight="7dip"
+        android:drawableLeft="@drawable/top"
+        android:drawablePadding="3dip"
+        android:gravity="center_vertical"
+        android:maxLines="2"
+        android:paddingLeft="7dip"
+        android:paddingRight="7dip"
+        android:visibility="gone" />
+
+</LinearLayout>

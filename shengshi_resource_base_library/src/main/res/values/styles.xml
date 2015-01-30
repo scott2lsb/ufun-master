@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="AppTheme" parent="android:Theme.Light" />
+
+    <style name="background_color">
+        <item name="android:background">@color/background</item>
+    </style>
+
+    <!-- 启动时，防止长时间黑屏或白屏 -->
+    <style name="Theme.AppStart.LoadTranslucent" parent="android:Theme">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="dialog_basic" parent="android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <!-- 边框 -->
+        <item name="android:windowIsFloating">true</item>
+        <!-- 是否浮现在activity之上 -->
+        <item name="android:windowIsTranslucent">true</item>
+        <!-- 半透明 -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 无标题 -->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!-- 背景透明 -->
+        <item name="android:backgroundDimEnabled">true</item>
+        <!-- 模糊,Dialog背景变暗 -->
+    </style>
+
+    <style name="loading_dialog" parent="@style/dialog_basic">
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:windowSoftInputMode">stateUnspecified|adjustPan</item>
+    </style>
+
+    <!-- 自定义加载等待进度条 -->
+    <style name="loading_bar_style">
+        <item name="android:textColor">@color/loading_bar_color</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <!-- 屏蔽系统activity动画 -->
+    <style name="ActivityNoAnimationTheme" parent="Theme.AppCompat.Light">
+        <item name="android:windowAnimationStyle">@style/ActivityNoAnimation</item>
+    </style>
+
+    <style name="ActivityNoAnimation">
+        <item name="android:activityOpenEnterAnimation">@null</item>
+        <item name="android:activityOpenExitAnimation">@null</item>
+        <item name="android:activityCloseEnterAnimation">@null</item>
+        <item name="android:activityCloseExitAnimation">@null</item>
+        <item name="android:taskOpenEnterAnimation">@null</item>
+        <item name="android:taskOpenExitAnimation">@null</item>
+        <item name="android:taskCloseEnterAnimation">@null</item>
+        <item name="android:taskCloseExitAnimation">@null</item>
+        <item name="android:taskToFrontEnterAnimation">@null</item>
+        <item name="android:taskToFrontExitAnimation">@null</item>
+        <item name="android:taskToBackEnterAnimation">@null</item>
+        <item name="android:taskToBackExitAnimation">@null</item>
+    </style>
+
+    <!-- 设置了android:windowIsTranslucent=true这个属性,会导致下面失效 -->
+    <!-- 解决方法：windowAnimationStyle需要继承Animation.Translucent，一般情况是继承的Animation.Activity -->
+    <style name="ActivityAnimation" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/anim_window_in</item>
+        <item name="android:activityOpenExitAnimation">@anim/anim_window_out</item>
+        <item name="android:activityCloseEnterAnimation">@anim/anim_window_close_in</item>
+        <item name="android:activityCloseExitAnimation">@anim/anim_window_close_out</item>
+    </style>
+
+    <!-- 解决Theme.Holo使Button样式变大 -->
+    <style name="CustomHoloLightButtonStyle" parent="@android:style/Widget.Holo.Light.Button"> <!-- @android:style/Widget.Holo.Light.Button -->
+        <item name="android:minHeight">1dip</item>
+        <item name="android:minWidth">1dip</item>
+    </style>
+
+    <style name="Activity_animation_translucent_translate" parent="@android:style/Animation.Translucent">
+        <item name="android:windowEnterAnimation">@anim/push_left_in</item>
+        <item name="android:windowExitAnimation">@anim/push_right_out</item>
+    </style>
+
+    <style name="ProgresssBar_Blue" parent="@android:style/Widget.ProgressBar.Horizontal">
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:minHeight">2dip</item>
+        <item name="android:maxHeight">2dip</item>
+        <item name="android:progressDrawable">@drawable/progressbar_color</item>
+    </style>
+
+    <!-- popWin进出动画 -->
+    <style name="popwinAnimation">
+        <item name="android:windowEnterAnimation">@anim/scale_big_by_top_to_down</item>
+        <item name="android:windowExitAnimation">@anim/scale_small_by_top_to_up</item>
+    </style>
+
+</resources>

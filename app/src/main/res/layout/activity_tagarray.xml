@@ -1,0 +1,30 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mine_top_bg"
+    android:orientation="vertical"
+    tools:context=".PublishActivity">
+
+    <include layout="@layout/ufun_topbar" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="7dip"
+        android:text="@string/tag_tips"
+        android:textColor="@color/sub_heading_text"
+        android:textSize="@dimen/design_size_24" />
+
+    <com.shengshi.base.widget.xlistview.XListView
+        android:id="@id/mGeneralListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@color/mine_top_bg"
+        android:dividerHeight="10dip"
+        android:fadingEdge="none"
+        android:overScrollMode="never"
+        android:scrollbars="none" />
+
+</LinearLayout>

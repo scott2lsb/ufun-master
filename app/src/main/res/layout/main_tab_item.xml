@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="50dip"
+    android:background="@drawable/foot_bg"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_tab_text"
+        style="@style/MainFootTabButton"
+        android:text="底部"
+        android:textColor="@color/main_tab_tvcolor" />
+
+</LinearLayout>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ProgressWheel="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/rebate_pay_waitting_tip"
+        style="@style/gray_title.16sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingBottom="20dp"
+        android:text="@string/rebate_pay_waitting_tip" />
+
+    <com.shengshi.base.widget.ProgressWheel
+        android:id="@+id/rebate_pay_waitting_progressBar"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        ProgressWheel:barColor="@color/light_green"
+        ProgressWheel:barLength="35dp"
+        ProgressWheel:barWidth="3dp"
+        ProgressWheel:contourColor="#aaaaaa"
+        ProgressWheel:rimColor="#aaaaaa"
+        ProgressWheel:rimWidth="1dp"
+        ProgressWheel:spinSpeed="5dp"
+        ProgressWheel:text="@string/rebate_pay_waitting_btn_text"
+        ProgressWheel:textColor="#aaaaaa"
+        ProgressWheel:textSize="18sp" />
+
+</LinearLayout>

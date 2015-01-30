@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/specialrole_item_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/listitembg"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:padding="11dip">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.shengshi.base.widget.roundimageview.CircleImageView
+                android:id="@+id/specialrole_listitem_iv"
+                android:layout_width="45dip"
+                android:layout_height="45dip"
+                android:layout_marginRight="11dip"
+                android:scaleType="centerCrop"
+                android:src="@drawable/avatar" />
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/specialrole_item_title"
+                    style="@style/titletext" />
+
+                <TextView
+                    android:id="@+id/specialrole_item_subtitle"
+                    style="@style/titletext_sub" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/specialrole_item_ifjoin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/add"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/specialroleitem_join_canclebtn"
+                android:layout_width="wrap_content"
+                android:layout_height="30dip"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/btn_gray"
+                android:clickable="false"
+                android:text="@string/cacle_attention"
+                android:textColor="@color/sub_heading_text"
+                android:textSize="@dimen/design_size_20"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/specialrole_item_imglv"
+            android:layout_width="match_parent"
+            android:layout_height="70dip"
+            android:layout_marginRight="40dip"
+            android:layout_marginTop="10dip"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/specialrole_item_img1"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_marginRight="5dip"
+                android:layout_weight="1"
+                android:background="@color/login_line"
+                android:scaleType="fitXY" />
+
+            <ImageView
+                android:id="@+id/specialrole_item_img2"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_marginRight="5dip"
+                android:layout_weight="1"
+                android:background="@color/login_line"
+                android:scaleType="fitXY" />
+
+            <ImageView
+                android:id="@+id/specialrole_item_img3"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_marginRight="5dip"
+                android:layout_weight="1"
+                android:background="@color/login_line"
+                android:scaleType="fitXY" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

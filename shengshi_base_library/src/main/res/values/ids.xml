@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <item type="id" name="mGeneralGridview" />
+    <item type="id" name="mGeneralWebview" />
+    <item type="id" name="mGeneralListView" />
+    <item type="id" name="mGeneralScrollView" />
+    <item type="id" name="mGeneralViewPager" />
+    <item type="id" name="mGeneralLoadingBar" />
+    <item type="id" name="mGeneralMapView" />
+
+</resources>

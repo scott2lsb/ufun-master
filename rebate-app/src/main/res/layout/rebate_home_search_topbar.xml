@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rebate_home_search_top_layout"
+    android:layout_width="match_parent"
+    android:layout_height="50dip"
+    android:background="@drawable/topbar_bg"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/rebate_top_btn_return"
+        style="@style/black_title.14sp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:drawableLeft="@drawable/btn_back_selector"
+        android:gravity="center_vertical"
+        android:singleLine="true" />
+
+    <EditText
+        android:id="@+id/rebate_search"
+        style="@style/black_title.18sp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginRight="10dp"
+        android:layout_weight="1"
+        android:background="@drawable/edit_gray_bg"
+        android:drawableLeft="@drawable/icon_indicate_search"
+        android:ellipsize="start"
+        android:hint="@string/rebate_top_bar_edit_tip"
+        android:padding="5dp"
+        android:singleLine="true" />
+
+</LinearLayout>

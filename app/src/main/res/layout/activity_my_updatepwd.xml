@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/ufun_topbar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip"
+        android:paddingTop="10dip">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="50dip"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/ori_pwd_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dip"
+                android:text="@string/mine_updatepwd_old"
+                android:textColor="@color/black"
+                android:textSize="@dimen/design_size_24" />
+
+            <EditText
+                android:id="@+id/ori_pwd"
+                style="@style/edittext"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dip"
+                android:layout_toRightOf="@+id/ori_pwd_textview"
+                android:hint="@string/mine_updatepwd_old_hit"
+                android:inputType="phone"
+                android:maxLength="15"
+                android:singleLine="true" />
+        </RelativeLayout>
+
+        <View style="@style/view_line" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="50dip"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/new_pwd_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dip"
+                android:text="@string/mine_updatepwd_new"
+                android:textColor="@color/black"
+                android:textSize="@dimen/design_size_24" />
+
+            <EditText
+                android:id="@+id/new_pwd"
+                style="@style/edittext"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dip"
+                android:layout_toRightOf="@+id/new_pwd_textview"
+                android:hint="@string/register_pwd_hit"
+                android:inputType="phone"
+                android:maxLength="15"
+                android:singleLine="true" />
+        </RelativeLayout>
+
+        <View style="@style/view_line" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/ufun_topbar" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:fadingEdge="none"
+        android:fillViewport="true"
+        android:overScrollMode="never"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="10dp">
+
+            <RelativeLayout
+                android:id="@+id/mine_personal_icon_rl"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/listitembg"
+                android:gravity="center_vertical"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:text="@string/mine_personal_icon"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/design_size_24" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:orientation="horizontal">
+
+                    <com.shengshi.base.widget.roundimageview.CircleImageView
+                        android:id="@+id/mine_personal_icon"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginRight="5dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/avatar" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/icon_indicate_more" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <View style="@style/view_line" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/listitembg"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:text="@string/mine_personal_mobile"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/design_size_24" />
+
+                <TextView
+                    android:id="@+id/mine_personal_mobile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:text="138****4563"
+                    android:textColor="@color/sub_heading_text"
+                    android:textSize="@dimen/design_size_24" />
+            </RelativeLayout>
+
+            <View style="@style/view_line" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/listitembg"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:text="@string/register_nickname"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/design_size_24" />
+
+                <TextView
+                    android:id="@+id/mine_personal_username"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:text="网飘飘"
+                    android:textColor="@color/sub_heading_text"
+                    android:textSize="@dimen/design_size_24" />
+            </RelativeLayout>
+
+            <View style="@style/view_line" />
+
+            <RelativeLayout
+                android:id="@+id/mine_personal_birth_rl"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/listitembg"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:text="@string/mine_personal_birth"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/design_size_24" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/mine_personal_birth"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginRight="5dp"
+                        android:text="2006-01-01"
+                        android:textColor="@color/sub_heading_text"
+                        android:textSize="@dimen/design_size_24" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/icon_indicate_more" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <View
+                style="@style/view_line"
+                android:layout_marginBottom="3dp"
+                android:layout_marginTop="3dp" />
+
+            <RelativeLayout
+                android:id="@+id/mine_personal_gender_rl"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/listitembg"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:text="@string/mine_personal_gender"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/design_size_24" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/mine_personal_gender"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginRight="5dp"
+                        android:text="男"
+                        android:textColor="@color/sub_heading_text"
+                        android:textSize="@dimen/design_size_24" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/icon_indicate_more" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <View
+                style="@style/view_line"
+                android:layout_marginBottom="3dp"
+                android:layout_marginTop="3dp" />
+
+            <LinearLayout
+                android:id="@+id/mine_personal_signature_rl"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text="@string/mine_personal_signature"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/design_size_24" />
+
+                <LinearLayout
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/mine_personal_signature"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1"
+                        android:ellipsize="end"
+                        android:gravity="center_vertical"
+                        android:maxLines="2"
+                        android:text="food is everythingfood"
+                        android:textColor="@color/sub_heading_text"
+                        android:textSize="@dimen/design_size_24" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/icon_indicate_more" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                style="@style/view_line"
+                android:layout_marginBottom="3dp"
+                android:layout_marginTop="3dp" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

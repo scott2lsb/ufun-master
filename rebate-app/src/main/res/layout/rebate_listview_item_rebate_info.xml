@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?><!-- 具体返利条目信息 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rebate_info_item_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/rebate_listitem_bg_selector"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="74dp"
+        android:layout_gravity="center_vertical"
+        android:layout_margin="10dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/brand_img"
+            android:layout_width="110dp"
+            android:layout_height="74dp"
+            android:background="@color/login_line"
+            android:contentDescription="@null"
+            android:scaleType="fitXY" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <!-- 商家名称 -->
+
+            <TextView
+                android:id="@+id/brand_name"
+                style="@style/black_title.selector.16sp"
+                android:singleLine="true" />
+
+            <!-- 返利信息（返利条件） -->
+
+            <TextView
+                android:id="@+id/rebate_title"
+                style="@style/gray_title.selector.14sp"
+                android:singleLine="true" />
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <!-- 返利额度 -->
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom">
+
+                <ImageView
+                    android:id="@+id/rebate_fan_text_icon"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginTop="12dp"
+                    android:background="@drawable/rebate_fan_text_icon"
+                    android:contentDescription="@null" />
+
+                <TextView
+                    android:id="@+id/rebate_quota"
+                    style="@style/green_title.24sp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@id/rebate_fan_text_icon"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="50%" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <com.shengshi.rebate.widget.RebateCalendar
+            android:id="@+id/mHomeCalendar"
+            android:layout_width="52dp"
+            android:layout_height="56dp"
+            android:layout_gravity="center" />
+    </LinearLayout>
+
+    <include
+        android:id="@+id/bottom_line_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="10dp"
+        layout="@layout/rebate_widget_line_layout" />
+
+</LinearLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?><!-- layer-list 可以将多个图片按照顺序层叠起来 -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@android:id/background">
+        <shape>
+            <gradient
+                android:angle="180"
+                android:endColor="#f4f4f4"
+                android:startColor="#f4f4f4" />
+        </shape>
+    </item>
+    <item android:id="@android:id/secondaryProgress">
+        <clip>
+            <shape>
+                <gradient
+                    android:angle="270"
+                    android:endColor="#f4f4f4"
+                    android:startColor="#f4f4f4" />
+            </shape>
+        </clip>
+    </item>
+    <item android:id="@android:id/progress">
+        <clip>
+            <shape>
+                <gradient
+                    android:angle="180"
+                    android:endColor="#bbeeff"
+                    android:startColor="#0799ea" />
+            </shape>
+        </clip>
+    </item>
+
+</layer-list>

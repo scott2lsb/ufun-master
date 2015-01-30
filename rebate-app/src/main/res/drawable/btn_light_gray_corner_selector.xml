@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:state_pressed="true">
+        <shape>
+            <!-- 填充的颜色 -->
+            <solid android:color="@color/gray_text" />
+
+            <!-- 设置按钮的四个角为弧形 -->
+            <corners android:radius="3dip" />
+
+            <!-- padding：Button里面的文字与Button边界的间隔 -->
+            <padding android:bottom="5dip" android:left="5dip" android:right="5dip" android:top="5dip" />
+        </shape>
+    </item>
+    <item>
+        <shape>
+            <!-- 填充的颜色 -->
+            <solid android:color="@color/gray_btn_color" />
+
+            <!-- 设置按钮的四个角为弧形 -->
+            <corners android:radius="3dip" />
+
+            <!-- padding：Button里面的文字与Button边界的间隔 -->
+            <padding android:bottom="5dip" android:left="5dip" android:right="5dip" android:top="5dip" />
+        </shape>
+    </item>
+
+</selector>

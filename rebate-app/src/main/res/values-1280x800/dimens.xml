@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="top_right_and_left_w">95dip</dimen>
+    <dimen name="popupwindow_content_height">320dip</dimen>
+
+</resources>

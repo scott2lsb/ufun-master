@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/ufun_topbar" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dip"
+        android:background="@color/line_color" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dip"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <FrameLayout
+            android:id="@+id/searchresult_toptab_topic_fv"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/listitembg"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/searchresult_toptab_topic_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:drawableLeft="@drawable/icon_topic_active"
+                android:drawablePadding="5dip"
+                android:text="@string/topic"
+                android:textColor="@color/main_tab_tv_active"
+                android:textSize="@dimen/design_size_28" />
+        </FrameLayout>
+
+        <View
+            android:layout_width="0.3dip"
+            android:layout_height="match_parent"
+            android:background="@color/gray" />
+
+        <FrameLayout
+            android:id="@+id/searchresult_toptab_user_fv"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/listitembg"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/searchresult_toptab_user_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:drawableLeft="@drawable/icon_user"
+                android:drawablePadding="5dip"
+                android:text="@string/user"
+                android:textColor="@color/sub_heading_text"
+                android:textSize="@dimen/design_size_28" />
+        </FrameLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.3dip"
+        android:background="@color/line_color" />
+
+    <include layout="@layout/widget_loading_bar_layout" />
+
+    <com.shengshi.base.widget.xlistview.XListView
+        android:id="@+id/searchresult_topic_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@color/line_color"
+        android:dividerHeight="0.3dip"
+        android:fadingEdge="none"
+        android:overScrollMode="never"
+        android:scrollbars="none" />
+
+    <com.shengshi.base.widget.xlistview.XListView
+        android:id="@+id/searchresult_user_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@color/line_color"
+        android:dividerHeight="0.3dip"
+        android:fadingEdge="none"
+        android:overScrollMode="never"
+        android:scrollbars="none" />
+
+</LinearLayout>

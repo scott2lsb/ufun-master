@@ -1,0 +1,1 @@
+include ':app', ':shengshi_http_library', ':shengshi_base_library', ':shengshi_resource_base_library', ':social_sdk_library', ':rebate-app'

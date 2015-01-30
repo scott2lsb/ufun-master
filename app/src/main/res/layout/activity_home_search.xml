@@ -1,0 +1,49 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".HomeSearchActivity">
+
+    <include layout="@layout/ufun_topbar" />
+
+    <LinearLayout
+        android:id="@+id/search_historylin"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dip"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="7dip"
+            android:text="@string/nearest_search"
+            android:textColor="@color/sub_heading_text"
+            android:textSize="@dimen/design_size_24" />
+
+        <com.shengshi.base.widget.xlistview.XListView
+            android:id="@+id/home_nearest_search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="@color/line_color"
+            android:dividerHeight="0.3dip"
+            android:fadingEdge="none"
+            android:overScrollMode="never"
+            android:scrollbars="none" />
+
+        <Button
+            android:id="@+id/btn_clear_search_history"
+            android:layout_width="match_parent"
+            android:layout_height="40dip"
+            android:layout_margin="22dip"
+            android:background="@color/clear_history_recorgbtn_bg"
+            android:gravity="center"
+            android:text="@string/clear_search_history"
+            android:textColor="@color/sub_heading_text"
+            android:textSize="@dimen/design_size_28" />
+    </LinearLayout>
+
+</LinearLayout>

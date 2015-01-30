@@ -1,0 +1,22 @@
+<resources>
+
+    <!-- 是否是debug模式，发布的时候请改成false -->
+    <string name="is_debug">true</string>
+
+    <!-- 返利卡友盟key -->
+    <string name="rebate_umeng_key">543b6e39fd98c50557017a7e</string>
+
+    <!-- 返利卡友盟渠道 -->
+    <string name="rebate_umeng_channel">UMENG_CHANNEL</string>
+
+    <!-- 返利卡版本号 -->
+    <integer name="rebate_version_code">1</integer>
+
+    <!-- 升级标识 -->
+    <string name="rebate_version_name_update">rebate_1.0.0</string>
+
+    <!-- 百度地图 -->
+    <string name="rebate_baidu_map_api_key">ejECyA5bW2kNIyAPKpbrVfYP</string>
+
+
+</resources>

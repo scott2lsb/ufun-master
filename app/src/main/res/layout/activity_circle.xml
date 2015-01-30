@@ -1,0 +1,31 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/mine_top_bg">
+
+    <include layout="@layout/ufun_topbar" />
+
+    <include layout="@layout/widget_loading_bar_layout" />
+
+    <com.shengshi.base.widget.xlistview.XListView
+        android:id="@id/mGeneralListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@color/mine_top_bg"
+        android:dividerHeight="0dip"
+        android:fadingEdge="none"
+        android:overScrollMode="never"
+        android:scrollbars="none" />
+    <!--      JazzyListView:effect="grow"
+         JazzyListView:max_velocity="0"
+         JazzyListView:only_animate_fling="false"
+         JazzyListView:only_animate_new_items="false"
+         android:cacheColorHint="@color/transparent"
+         android:divider="@null"
+         android:drawSelectorOnTop="false"
+         android:fadingEdgeLength="0dp"
+         android:listSelector="@android:color/transparent" -->
+
+
+</LinearLayout>

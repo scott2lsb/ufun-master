@@ -1,0 +1,21 @@
+<resources>
+
+    <!-- 是否是debug模式，发布的时候请改成false -->
+    <string name="is_debug">true</string>
+
+    <!-- 同城圈友盟key -->
+    <string name="ufun_umeng_key">54b726f2fd98c5e816000a1d</string>
+
+    <!-- 同城圈友盟渠道 -->
+    <string name="ufun_umeng_channel">ufun_umeng</string>
+
+    <!-- 同城圈版本号 -->
+    <integer name="ufun_version_code">1</integer>
+
+    <!-- 同城圈升级标识 -->
+    <string name="ufun_version_name">1.0.0</string>
+
+    <!-- 百度地图 -->
+    <string name="ufun_baidu_map_api_key">BWQmRXgspCSw3SCRFA1pO8X2</string>
+
+</resources>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/transparent_black"
+    android:orientation="vertical">
+
+    <ListView
+        android:id="@+id/lv_mspinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:cacheColorHint="@color/black"
+        android:divider="@color/line_color"
+        android:dividerHeight="0.3dp"
+        android:scrollbars="none" />
+
+</LinearLayout>

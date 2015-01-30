@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 提现开始 -->
+    <style name="gray_title.edittext">
+        <item name="android:background">@color/transparent</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">10dp</item>
+    </style>
+
+    <style name="black_title.withdraw">
+        <item name="android:background">@color/transparent</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:padding">10dp</item>
+    </style>
+    <!-- 提现结束 -->
+
+    <style name="black_title.selector.16sp.to_red">
+        <item name="android:textColor">@color/black_to_red_text_selector</item>
+    </style>
+
+    <style name="black_title.selector.18sp.to_red">
+        <item name="android:textColor">@color/black_to_red_text_selector</item>
+    </style>
+
+</resources>

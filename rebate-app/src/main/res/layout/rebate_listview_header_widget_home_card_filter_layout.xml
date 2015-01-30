@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/rebate_filter_category_layout"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:background="@drawable/rebate_listitem_bg_selector"
+        android:clickable="true"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/rebate_filter_category_tv"
+            style="@style/black_title.selector.16sp"
+            android:layout_gravity="center"
+            android:drawablePadding="-5dp"
+            android:drawableRight="@drawable/rebate_dropdown_icon"
+            android:gravity="center" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="1px"
+        android:layout_height="40dip"
+        android:layout_gravity="center_vertical"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/line_color" />
+
+    <LinearLayout
+        android:id="@+id/rebate_filter_area_layout"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:background="@drawable/rebate_listitem_bg_selector"
+        android:clickable="true"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/rebate_filter_area_tv"
+            style="@style/black_title.selector.16sp"
+            android:layout_gravity="center"
+            android:drawablePadding="-5dp"
+            android:drawableRight="@drawable/rebate_dropdown_icon"
+            android:gravity="center" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="1px"
+        android:layout_height="40dip"
+        android:layout_gravity="center_vertical"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/line_color" />
+
+    <LinearLayout
+        android:id="@+id/rebate_filter_sort_layout"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:background="@drawable/rebate_listitem_bg_selector"
+        android:clickable="true"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/rebate_filter_sort_tv"
+            style="@style/black_title.selector.16sp"
+            android:layout_gravity="center"
+            android:drawablePadding="-5dp"
+            android:drawableRight="@drawable/rebate_dropdown_icon"
+            android:gravity="center" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="green_btn" parent="red_btn">
+        <item name="android:background">@drawable/btn_green_selector</item>
+    </style>
+
+    <style name="green_btn.12sp">
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="green_btn.14sp">
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="green_btn.16sp">
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="green_btn.18sp">
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="green_btn.20sp">
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="green_btn.22sp">
+        <item name="android:textSize">22sp</item>
+    </style>
+
+    <style name="green_btn.24sp">
+        <item name="android:textSize">24sp</item>
+    </style>
+
+    <style name="green_btn.26sp">
+        <item name="android:textSize">26sp</item>
+    </style>
+
+    <style name="green_corner_btn" parent="green_btn">
+        <item name="android:background">@drawable/btn_green_corner_selector</item>
+    </style>
+
+    <style name="green_corner_btn.12sp">
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="green_corner_btn.14sp">
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="green_corner_btn.16sp">
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="green_corner_btn.18sp">
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="green_corner_btn.20sp">
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="green_corner_btn.22sp">
+        <item name="android:textSize">22sp</item>
+    </style>
+
+    <style name="green_corner_btn.24sp">
+        <item name="android:textSize">24sp</item>
+    </style>
+
+    <style name="green_corner_btn.26sp">
+        <item name="android:textSize">26sp</item>
+    </style>
+
+    <style name="light_gray_corner_btn" parent="gray_corner_btn">
+        <item name="android:background">@drawable/btn_light_gray_corner_selector</item>
+        <item name="android:textColor">@color/gray_text_selector</item>
+    </style>
+
+    <style name="light_gray_corner_btn.12sp">
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="light_gray_corner_btn.14sp">
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="light_gray_corner_btn.16sp">
+        <item name="android:textSize">16sp</item>
+    </style>
+
+</resources>

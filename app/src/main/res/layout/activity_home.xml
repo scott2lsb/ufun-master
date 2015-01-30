@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/ufun_topbar" />
+
+    <ImageView
+        android:id="@+id/bannerAd"
+        android:layout_width="0.1dip"
+        android:layout_height="0.1dip"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="43dip"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <FrameLayout
+            android:id="@+id/home_toptab_recommed_fv"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/hometab_sanjiao"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/home_toptab_recommed_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:drawableLeft="@drawable/recommend_active"
+                android:drawablePadding="5dip"
+                android:text="@string/recommend"
+                android:textColor="@color/white"
+                android:textSize="@dimen/design_size_24" />
+        </FrameLayout>
+
+        <View
+            android:layout_width="1dip"
+            android:layout_height="match_parent"
+            android:background="@color/home_toptab_middle_line" />
+
+        <FrameLayout
+            android:id="@+id/home_toptab_nearby_fv"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/home_toptab_bg"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/home_toptab_nearby_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:drawableLeft="@drawable/icon_nearby"
+                android:drawablePadding="5dip"
+                android:text="@string/nearby"
+                android:textColor="@color/sub_heading_text"
+                android:textSize="@dimen/design_size_24" />
+
+            <!--
+                 <ImageView
+                android:id="@+id/home_toptab_nearby_arrow_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|bottom"
+                android:background="@drawable/arrow_white"
+                android:visibility="gone" />
+            -->
+        </FrameLayout>
+    </LinearLayout>
+
+    <include layout="@layout/widget_loading_bar_layout" />
+
+    <com.shengshi.base.widget.xlistview.XListView
+        android:id="@+id/home_recommed_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@color/mine_top_bg"
+        android:dividerHeight="11dip"
+        android:fadingEdge="none"
+        android:footerDividersEnabled="false"
+        android:headerDividersEnabled="false"
+        android:overScrollMode="never"
+        android:scrollbars="none" />
+
+    <com.shengshi.base.widget.xlistview.XListView
+        android:id="@+id/home_nearby_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@color/mine_top_bg"
+        android:dividerHeight="11dip"
+        android:fadingEdge="none"
+        android:footerDividersEnabled="false"
+        android:headerDividersEnabled="false"
+        android:overScrollMode="never"
+        android:scrollbars="none" />
+
+</LinearLayout>

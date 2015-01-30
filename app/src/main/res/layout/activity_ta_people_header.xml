@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/mine_user_header" />
+
+    <TextView
+        style="@style/titletext_sub"
+        android:padding="7dip"
+        android:text="@string/join_circle" />
+
+    <LinearLayout
+        android:id="@+id/quans_ll"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="15dip"
+        android:paddingRight="15dip">
+
+        <GridView
+            android:id="@+id/quans_gridview"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:horizontalSpacing="5dip"
+            android:numColumns="4"
+            android:scrollbars="none"
+            android:stretchMode="columnWidth"
+            android:verticalSpacing="5dip" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/quans_all_ll"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="7dip"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <View
+            android:layout_width="0dip"
+            android:layout_height="0.3dip"
+            android:layout_weight="1"
+            android:background="@color/line_color"
+            android:gravity="center_vertical" />
+
+        <TextView
+            android:id="@+id/quans_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="7dip"
+            android:paddingRight="7dip"
+            android:text="@string/expand_all"
+            android:textColor="@color/sub_heading_text"
+            android:textSize="@dimen/design_size_20" />
+
+        <View
+            android:layout_width="0dip"
+            android:layout_height="0.3dip"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:background="@color/line_color" />
+    </LinearLayout>
+
+    <View
+        style="@style/view_line"
+        android:layout_marginTop="7dip" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="3dip"
+        android:layout_marginLeft="7dip"
+        android:layout_marginTop="7dip"
+        android:text="Ta的话题"
+        android:textColor="@color/sub_heading_text"
+        android:textSize="@dimen/design_size_20" />
+
+</LinearLayout>

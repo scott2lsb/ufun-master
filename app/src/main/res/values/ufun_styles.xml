@@ -1,0 +1,121 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="UFunAppTheme" parent="@style/AppBaseTheme">
+
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:screenOrientation">portrait</item>
+        <item name="android:buttonStyle">@style/CustomHoloLightButtonStyle</item>
+        <item name="android:windowAnimationStyle">@style/Activity_animation_translucent_translate
+        </item>
+    </style>
+
+    <!-- 透明主题 -->
+    <style name="TranslucentTheme" parent="@style/AppTheme">
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+
+    <style name="comment_ratingbar_style" parent="@android:style/Widget.RatingBar">
+        <item name="android:progressDrawable">@drawable/custom_ratingbar_progress</item>
+        <item name="android:minHeight">22dip</item>
+        <item name="android:maxHeight">22dip</item>
+        <item name="android:stepSize">0.1</item>
+        <item name="android:isIndicator">true</item>
+    </style>
+
+    <!-- APP主页下面tab样式 -->
+    <style name="MainFootTabButton">
+        <item name="android:textSize">11sp</item>
+        <item name="android:gravity">center_horizontal|center_vertical</item>
+        <item name="android:background">@color/white</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:button">@null</item>
+        <item name="android:layout_weight">1.0</item>
+        <item name="android:paddingBottom">2.0dip</item>
+        <item name="android:paddingTop">5.0dip</item>
+    </style>
+    <!-- APP中所有28dip的大标题样式 -->
+    <style name="titletext">
+        <item name="android:textSize">@dimen/design_size_28</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <!-- APP中所有24dip附标题样式 -->
+    <style name="titletext_sub">
+        <item name="android:textSize">@dimen/design_size_24</item>
+        <item name="android:textColor">@color/sub_heading_text</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="sub_reply_text">
+        <item name="android:textSize">@dimen/design_size_24</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingTop">3dip</item>
+    </style>
+
+    <!-- APP中所有20dip附标题样式 -->
+    <style name="titletext20dip">
+        <item name="android:textSize">@dimen/design_size_20</item>
+        <item name="android:textColor">@color/sub_heading_text</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingTop">3dip</item>
+    </style>
+    <!-- APP中所有16dip附标题样式 用于圈子首页的小字 -->
+    <style name="titletext16dip">
+        <item name="android:textSize">@dimen/design_size_16</item>
+        <item name="android:textColor">@color/sub_heading_text</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="circleindex_item_imageview">
+        <item name="android:layout_width">0dip</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:background">@color/mine_top_bg</item>
+    </style>
+    <!-- 编辑框样式 -->
+    <style name="edittext">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">40dip</item>
+        <item name="android:background">@null</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/design_size_24</item>
+    </style>
+    <!-- 线样式 -->
+    <style name="view_line">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">0.3dip</item>
+        <item name="android:background">@color/line_color</item>
+    </style>
+
+    <style name="lifecircle_popupwindow">
+        <item name="android:windowEnterAnimation">@anim/lifecircle_tip_popupwindow_show</item>
+        <item name="android:windowExitAnimation">@anim/lifecircle_tip_popupwindow_dismiss</item>
+    </style>
+
+    <style name="AnimBottom" parent="@android:style/Animation">
+        <item name="android:windowEnterAnimation">@anim/push_bottom_in</item>
+        <item name="android:windowExitAnimation">@anim/push_bottom_out</item>
+    </style>
+</resources>

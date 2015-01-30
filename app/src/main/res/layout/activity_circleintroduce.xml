@@ -1,0 +1,146 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".CircleintroduceActivity">
+
+    <include layout="@layout/ufun_topbar" />
+
+    <include layout="@layout/widget_loading_bar_layout" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/mine_top_bg"
+        android:orientation="horizontal"
+        android:padding="10dip">
+
+        <com.shengshi.base.widget.roundimageview.CircleImageView
+            android:id="@+id/circleintroduce_quanavatar"
+            android:layout_width="45dip"
+            android:layout_height="45dip"
+            android:layout_marginRight="7dip"
+            android:scaleType="centerCrop"
+            android:src="@drawable/avatar" />
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:focusable="false"
+            android:gravity="left|center_vertical"
+            android:orientation="vertical"
+            android:paddingLeft="5dip">
+
+            <TextView
+                android:id="@+id/circleintroduce_quanname"
+                style="@style/titletext" />
+
+            <TextView
+                android:id="@+id/circleintroduce_quandesp"
+                style="@style/titletext_sub"
+                android:maxLines="2" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/circleintroduce_addbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="3dip"
+            android:background="@drawable/icon_button_grey"
+            android:text="@string/exit_circle"
+            android:textSize="@dimen/design_size_28"
+            android:textColor="@color/sub_heading_text" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dip">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="圈主"
+            android:textSize="@dimen/design_size_28" />
+
+        <com.shengshi.base.widget.roundimageview.CircleImageView
+            android:id="@+id/circleintroduce_useravatar"
+            android:layout_width="45dip"
+            android:layout_height="45dip"
+            android:layout_marginLeft="7dip"
+            android:layout_marginRight="7dip"
+            android:scaleType="centerCrop"
+            android:src="@drawable/avatar" />
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:focusable="false"
+            android:gravity="left|center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/circleintroduce_username"
+                style="@style/titletext" />
+
+            <TextView
+                android:id="@+id/circleintroduce_userdesp"
+                style="@style/titletext_sub"
+                android:maxLines="2" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.3dip"
+        android:background="@color/line_color" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="7dip"
+        android:focusable="false"
+        android:gravity="left|center_vertical"
+        android:orientation="vertical"
+        android:paddingLeft="5dip">
+
+        <TextView
+            style="@style/titletext"
+            android:text="圈简介" />
+
+        <TextView
+            android:id="@+id/circleintroduce_quanintroduce"
+            style="@style/titletext_sub" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.3dip"
+        android:background="@color/line_color" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="7dip"
+        android:focusable="false"
+        android:gravity="left|center_vertical"
+        android:orientation="vertical"
+        android:paddingLeft="5dip">
+
+        <TextView
+            style="@style/titletext"
+            android:text="圈规则" />
+
+        <TextView
+            android:id="@+id/circleintroduce_quanrules"
+            style="@style/titletext_sub" />
+    </LinearLayout>
+
+</LinearLayout>

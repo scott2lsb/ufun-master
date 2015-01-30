@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 有范 圈子 开始 -->
+    <color name="light_green">#68d430</color>
+    <!-- 同城圈、卡淡绿色 -->
+    <color name="bottom_color">#f3f3f3</color>
+    <!-- 底色 -->
+    <color name="gray_text">#7d7d7d</color>
+    <!-- 按钮文字 辅助文字 -->
+    <color name="list_item_normal">#FFFFFF</color>
+    <color name="list_item_press">#e2e3e3</color>
+    <color name="login_line">#e5e5e5</color>
+    <!-- 描边 -->
+    <!-- 有范 圈子 结束 -->
+
+
+    <!-- 第一版卡 设计 用的  主红色  开始 -->
+    <color name="dark_red">#e5002e</color>
+    <color name="light_red">#f55868</color>
+    <color name="green">#7acc88</color>
+    <color name="dark_gray">#aaaaaa</color>
+    <color name="light_gray">#dddddd</color>
+    <color name="light_gray_bbbbbb">#bbbbbb</color>
+    <color name="gray">#19000000</color>
+    <!-- 第一版卡 设计 用的  主红色  结束 -->
+
+
+    <!-- 通用 -->
+    <color name="white">#ffffffff</color>
+    <!-- 白色 -->
+    <color name="black">#ff000000</color>
+    <!-- 黑色 -->
+    <color name="transparent">#00000000</color>
+    <!-- 透明色 -->
+    <color name="white_translucent">#7fFFFFFF</color>
+    <color name="black_translucent">#7f000000</color>
+    <color name="transparent_black">#80000000</color>
+    <!-- 透明黑 -->
+    <color name="background">#f8f8f8</color>
+    <!-- 背景颜色 -->
+    <color name="loading_bar_color">#aaaaaa</color>
+    <!-- loadingBar -->
+    <color name="list_divider_line">#e5e5e5</color>
+
+    <color name="white_f8f8f8">#f8f8f8</color>
+
+    <color name="red">#FF0000</color>
+    <color name="full_transparent">#00000000</color>
+    <!-- 全透明 -->
+    <color name="half_transparent">#aa000000</color>
+    <color name="line_color">#f3f3f3</color>
+
+    <!-- 色块 -->
+    <drawable name="red_normal">@color/dark_red</drawable>
+    <!-- 红色按钮 -->
+    <drawable name="red_pressed">@color/red</drawable>
+    <!-- 红色按钮，按下态 -->
+    <drawable name="gray_normal">@color/light_gray</drawable>
+    <!-- 灰色按钮 -->
+    <drawable name="gray_pressed">@color/dark_gray</drawable>
+    <!-- 灰色按钮，按下态 -->
+    <drawable name="white_normal">#ffffffff</drawable>
+    <!-- 白色按钮 -->
+    <drawable name="white_pressed">#fff4f3f3</drawable>
+    <!-- 白色按下态 -->
+
+</resources>

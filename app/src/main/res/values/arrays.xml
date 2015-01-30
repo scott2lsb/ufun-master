@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="lifecircle_tip_operatioin_favor">
+        <item>收藏</item>
+        <item>全部回复</item>
+        <item>最新回复</item>
+    </string-array>
+    <string-array name="lifecircle_tip_operatioin_not_favor">
+        <item>取消收藏</item>
+        <item>全部回复</item>
+        <item>最新回复</item>
+    </string-array>
+    <string-array name="circle_topbar_titleList">
+        <item>最新回复</item>
+        <item>评论最多</item>
+        <item>最新发布</item>
+    </string-array>
+    <string-array name="lifecircle_reply_operation">
+        <item>回复</item>
+        <item>私信</item>
+    </string-array>
+</resources>

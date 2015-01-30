@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.shengshi.ufun.weight.CircleTipLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ufun_reply_rootview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/ufun_topbar" />
+
+    <include layout="@layout/widget_loading_bar_layout" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.shengshi.base.widget.xlistview.XListView
+            android:id="@id/mGeneralListView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="50dp"
+            android:cacheColorHint="@color/transparent"
+            android:drawSelectorOnTop="false"
+            android:listSelector="@color/transparent"
+            android:scrollbars="none" />
+
+        <include
+            android:id="@+id/ufun_tip_footer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            layout="@layout/ufun_activity_tip_footer" />
+
+        <include
+            android:id="@+id/ufun_tip_reply_layer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            layout="@layout/ufun_chat_bottom_input_layout"
+            android:visibility="invisible" />
+    </FrameLayout>
+
+</com.shengshi.ufun.weight.CircleTipLayout>

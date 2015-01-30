@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/ufun_topbar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dip">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dip"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="接收通知"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/design_size_24" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dip"
+                    android:text="关闭后，你就收不到有新私信等的通知"
+                    android:textColor="@color/sub_heading_text"
+                    android:textSize="@dimen/design_size_20" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/my_notice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/switch_open" />
+        </LinearLayout>
+
+        <View
+            style="@style/view_line"
+            android:layout_marginBottom="8dip"
+            android:layout_marginTop="8dip" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dip"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="回复系统消息"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/design_size_24" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dip"
+                    android:text="关闭后，当有人回复你的帖子的时候，系统不会再发系统消息提醒你有新的回复"
+                    android:textColor="@color/sub_heading_text"
+                    android:textSize="@dimen/design_size_20" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/my_message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/switch_open" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

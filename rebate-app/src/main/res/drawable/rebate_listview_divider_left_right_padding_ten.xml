@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- 用于listView中作为纯色的divider，左右默认有10dp的空白，高度设置为1px比较美观 -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:drawable="@color/rebate_line_color"
+        android:left="10dp"
+        android:right="10dp" />
+
+</layer-list>

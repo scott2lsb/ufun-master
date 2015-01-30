@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/picclircle_listitem"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:paddingRight="7dip"
+    android:paddingTop="7dip"
+    android:background="@drawable/listitembg"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/pic_circle_itembg"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+
+            >
+
+            <ImageView
+                android:id="@+id/picclircle_piciv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/login_line"
+                android:scaleType="centerCrop" />
+
+            <ImageView
+                android:id="@+id/picclircle_zanbtn"
+                android:layout_width="40dip"
+                android:layout_height="40dip"
+                android:layout_gravity="right|top"
+                android:background="@drawable/icon_praise" />
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/picclircle_titletv"
+            style="@style/titletext"
+            android:maxLines="2"
+            android:padding="3dip" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="3dip"
+            android:paddingRight="3dip"
+            android:paddingBottom="3dip"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/picclircle_unametv"
+                android:layout_height="wrap_content"
+                android:layout_width="0dip"
+                android:layout_weight="1"
+                android:textColor="@color/sub_heading_text"
+                android:textSize="@dimen/design_size_24" />
+
+
+            <TextView
+                android:id="@+id/picclircle_count"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:textColor="@color/sub_heading_text"
+                android:textSize="@dimen/design_size_24" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

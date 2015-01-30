@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/lifecircle_top_layout"
+    android:layout_width="match_parent"
+    android:layout_height="50dip"
+    android:background="@drawable/topbar_bg"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/lifecircle_top_btn_return"
+                style="@style/black_title.14sp"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center_vertical"
+                android:drawableLeft="@drawable/btn_back_selector"
+                android:gravity="center_vertical"
+                android:singleLine="true"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/lifecircle_top_tv_return"
+                style="@style/black_title.14sp"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="11dip"
+                android:gravity="center_vertical"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:visibility="gone" />
+
+            <EditText
+                android:id="@+id/lifecircle_search"
+                android:textSize="@dimen/design_size_28"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="bottom"
+                android:layout_marginRight="11dip"
+                android:layout_marginTop="7dip"
+                android:layout_marginBottom="7dip"
+                android:layout_weight="1"
+                android:background="@drawable/input_grey"
+                android:drawableLeft="@drawable/icon_indicate_search"
+                android:drawablePadding="5dp"
+                android:singleLine="true"
+                android:padding="7dip"
+                android:textCursorDrawable="@null"
+                android:imeOptions="actionSearch"
+                android:imeActionLabel="@string/search"
+                android:hint="@string/input_search_keyword"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/lifecircle_top_title"
+            android:layout_width="wrap_content"
+            android:layout_height="50dip"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:maxWidth="160dp"
+            android:singleLine="true"
+            android:textColor="@color/headding_text"
+            android:textSize="@dimen/design_size_30" />
+
+        <RelativeLayout
+            android:id="@+id/lifecircle_top_right_layer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp">
+
+            <ImageView
+                android:id="@+id/lifecircle_top_right"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_alignParentRight="true"
+                android:contentDescription="@null"
+                android:scaleType="center"
+                android:visibility="gone" />
+
+            <ProgressBar
+                android:id="@+id/lifecircle_top_refresh"
+                style="?android:attr/progressBarStyleSmallInverse"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/lifecircle_top_right_title"
+                style="@style/black_title.14sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:gravity="center_vertical"
+                android:singleLine="true"
+                android:textColor="@drawable/titletext" />
+
+            <ImageView
+                android:id="@+id/lifecircle_top_right_another"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@id/lifecircle_top_right"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="7dp"
+                android:contentDescription="@null"
+                android:visibility="gone" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>

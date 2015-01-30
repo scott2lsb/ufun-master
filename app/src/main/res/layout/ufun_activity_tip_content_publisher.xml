@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ufun_activity_tip_content_publisher_layer"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp"
+    android:background="@color/light_gray"
+    android:orientation="vertical">
+
+    <com.shengshi.base.widget.roundimageview.CircleImageView
+        android:id="@+id/lifecircle_tips_reply_publisher_avatar"
+        android:layout_width="50dip"
+        android:layout_height="50dip"
+        android:scaleType="centerCrop"
+        android:src="@drawable/avatar" />
+
+    <TextView
+        android:id="@+id/lifecircle_tips_reply_publisher_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/lifecircle_tips_reply_publisher_avatar"
+        android:layout_marginLeft="10dip"
+        android:layout_toRightOf="@id/lifecircle_tips_reply_publisher_avatar"
+        android:textColor="@color/black"
+        android:textSize="@dimen/design_size_24" />
+
+    <TextView
+        android:id="@+id/lifecircle_tips_reply_rank_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/lifecircle_tips_reply_publisher_avatar"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@id/lifecircle_tips_reply_publisher_name"
+        android:background="@drawable/btn_blue"
+        android:padding="2dp"
+        android:textColor="@color/white"
+        android:textSize="@dimen/design_size_20" />
+
+    <TextView
+        android:id="@+id/lifecircle_reply_operation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:contentDescription="@null"
+        android:clickable="true"
+        android:background="@drawable/lifecircle_more" />
+
+    <TextView
+        android:id="@+id/lifecircle_tips_reply_publisher_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lifecircle_tips_reply_publisher_name"
+        android:layout_marginLeft="10dip"
+        android:layout_toRightOf="@id/lifecircle_tips_reply_publisher_avatar"
+        android:textSize="@dimen/design_size_20" />
+
+</RelativeLayout>

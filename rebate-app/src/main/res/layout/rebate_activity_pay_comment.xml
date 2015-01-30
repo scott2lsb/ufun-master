@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical">
+
+    <include layout="@layout/rebate_topbar" />
+
+    <include layout="@layout/rebate_activity_pay_comment_header" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/comment_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/white">
+
+                <RatingBar
+                    android:id="@+id/result_comment_ratingBar"
+                    style="@style/green_ratingbar_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="10dp"
+                    android:isIndicator="false"
+                    android:numStars="5"
+                    android:rating="2.5" />
+
+                <TextView
+                    style="@style/gray_title.16sp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:padding="10dp"
+                    android:text="@string/rebate_rating_text" />
+            </RelativeLayout>
+
+            <include layout="@layout/rebate_widget_line_layout" />
+
+            <EditText
+                android:id="@+id/rebate_comment_content"
+                style="@style/black_title.16sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/comment_layout"
+                android:layout_marginBottom="10dp"
+                android:background="@color/white"
+                android:gravity="top"
+                android:hint="@string/rebate_comment_edit_tip"
+                android:lines="3"
+                android:padding="10dp">
+
+                <requestFocus />
+            </EditText>
+
+            <RelativeLayout
+                android:id="@+id/anonymous_switch_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rebate_comment_content"
+                android:background="@color/white">
+
+                <TextView
+                    style="@style/black_title.16sp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:padding="10dp"
+                    android:text="@string/rebate_is_anonymous" />
+
+                <CheckBox
+                    android:id="@+id/rebate_is_anonymous"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:button="@drawable/switch_selector"
+                    android:padding="10dp" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_below="@id/anonymous_switch_layout"
+                android:gravity="center_horizontal|bottom"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/rebate_post_content"
+                    style="@style/green_corner_btn.16sp"
+                    android:layout_width="match_parent"
+                    android:gravity="center"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp"
+                    android:text="@string/rebate_comment_post_content" />
+
+                <TextView
+                    android:id="@+id/rebate_nothing_to_say"
+                    style="@style/light_gray_corner_btn.16sp"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp"
+                    android:text="@string/rebate_comment_nothingtosay" />
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</LinearLayout>

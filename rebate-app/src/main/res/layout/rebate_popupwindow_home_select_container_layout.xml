@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/popupwindow_content_height"
+    android:orientation="horizontal">
+
+    <ListView
+        android:id="@+id/rebate_lv_menu"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/popupwindow_content_height"
+        android:layout_weight="1"
+        android:background="@color/full_transparent"
+        android:cacheColorHint="#00000000"
+        android:divider="@color/rebate_line_color"
+        android:dividerHeight="1px"
+        android:scrollbars="none"></ListView>
+
+    <ListView
+        android:id="@+id/rebate_lv_subject"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/popupwindow_content_height"
+        android:layout_weight="1"
+        android:background="@color/white"
+        android:cacheColorHint="#00000000"
+        android:divider="@drawable/rebate_listview_divider_left_right_padding_ten"
+        android:dividerHeight="1px"></ListView>
+
+</merge>

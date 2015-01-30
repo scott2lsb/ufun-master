@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/rebate-app/rebate-app.iml" filepath="$PROJECT_DIR$/rebate-app/rebate-app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/shengshi_base_library/shengshi_base_library.iml" filepath="$PROJECT_DIR$/shengshi_base_library/shengshi_base_library.iml" />
+      <module fileurl="file://$PROJECT_DIR$/shengshi_http_library/shengshi_http_library.iml" filepath="$PROJECT_DIR$/shengshi_http_library/shengshi_http_library.iml" />
+      <module fileurl="file://$PROJECT_DIR$/shengshi_resource_base_library/shengshi_resource_base_library.iml" filepath="$PROJECT_DIR$/shengshi_resource_base_library/shengshi_resource_base_library.iml" />
+      <module fileurl="file://$PROJECT_DIR$/social_sdk_library/social_sdk_library.iml" filepath="$PROJECT_DIR$/social_sdk_library/social_sdk_library.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ufun_project.iml" filepath="$PROJECT_DIR$/ufun_project.iml" />
+    </modules>
+  </component>
+</project>
+

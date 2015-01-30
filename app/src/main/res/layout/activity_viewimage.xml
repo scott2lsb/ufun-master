@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/black"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!--     <ProgressBar
+                android:id="@+id/progressbar_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true" /> -->
+
+        <com.shengshi.ufun.weight.ViewPagerFixed
+            android:id="@+id/viewimagePager"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <include
+            layout="@layout/widget_photo_image_select_bottom"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:paddingRight="10dip"
+        android:paddingTop="5dip"
+        android:background="@drawable/title_transparent_bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/head_button_left_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center"
+            android:contentDescription="@null"
+            android:scaleType="fitXY"
+            android:src="@drawable/btn_back_selector" />
+
+        <TextView
+            android:id="@+id/head_center_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="#ffeeeeee"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/head_button_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:contentDescription="@null"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_download_normal" />
+
+        <TextView
+            android:id="@+id/child_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/pictures_multiple_choice_icon_unselected"
+            android:gravity="center"
+            android:textColor="#ffeeeeee"
+            android:visibility="gone" />
+    </FrameLayout>
+
+</RelativeLayout>

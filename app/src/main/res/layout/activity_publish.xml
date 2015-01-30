@@ -1,0 +1,147 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mine_top_bg"
+    android:orientation="vertical"
+    tools:context=".PublishActivity">
+
+    <include layout="@layout/ufun_topbar" />
+
+    <include layout="@layout/widget_loading_bar_layout" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:fadingEdge="none"
+        android:overScrollMode="never"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/publish_edit_title"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:hint="@string/to_issue_a_name"
+                android:paddingBottom="15dip"
+                android:paddingLeft="7dip"
+                android:paddingRight="7dip"
+                android:paddingTop="20dip"
+                android:singleLine="true"
+                android:textSize="@dimen/design_size_24" />
+
+            <EditText
+                android:id="@+id/publish_edit_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dip"
+                android:background="@color/white"
+                android:cursorVisible="true"
+                android:focusable="true"
+                android:gravity="top"
+                android:hint="@string/input_content_hint"
+                android:minHeight="100dip"
+                android:paddingBottom="10dip"
+                android:paddingLeft="7dip"
+                android:paddingRight="7dip"
+                android:paddingTop="10dip"
+                android:textSize="@dimen/design_size_24" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="20dip"
+                android:background="@color/line_color" />
+
+            <include layout="@layout/widget_preview_pics_layout" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dip"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/publish_onedimen_taglv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+
+                    >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:padding="7dip"
+                        android:text="@string/tag_tips"
+                        android:textColor="@color/sub_heading_text"
+                        android:textSize="@dimen/design_size_24" />
+
+                    <com.shengshi.base.widget.GridNoScrollView
+                        android:id="@+id/tag_gridview"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:background="@color/white"
+                        android:gravity="center"
+                        android:horizontalSpacing="10dp"
+                        android:numColumns="4"
+                        android:scrollbars="none"
+                        android:stretchMode="columnWidth"
+                        android:verticalSpacing="10dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/publish_seconddimen_taglv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/publish_seconddimen_addtagtv"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dip"
+                            android:background="@drawable/listitembg"
+                            android:drawableRight="@drawable/icon_indicate_more"
+                            android:gravity="center_vertical"
+                            android:padding="7dip"
+                            android:text="@string/add_tag"
+                            android:textColor="@color/sub_heading_text"
+                            android:textSize="@dimen/design_size_24" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.3dip"
+                        android:background="@color/line_color" />
+
+                    <com.shengshi.base.widget.GridNoScrollView
+                        android:id="@+id/publish_seconddimen_gridview"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:gravity="center"
+                        android:horizontalSpacing="10dp"
+                        android:numColumns="4"
+                        android:padding="7dip"
+                        android:scrollbars="none"
+                        android:stretchMode="columnWidth"
+                        android:visibility="gone"
+                        android:verticalSpacing="10dp" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

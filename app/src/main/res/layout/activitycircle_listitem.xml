@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/addcard_secondlistitem"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/listitembg"
+    android:orientation="horizontal"
+    android:paddingLeft="5dip"
+    android:paddingTop="5dip"
+    android:paddingBottom="11dip">
+
+    <TextView
+        android:id="@+id/activitycircle_listitem_rankingtv"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:textColor="@color/black"
+        android:paddingLeft="11dip"
+        android:paddingRight="11dip"
+        android:textSize="30sp" />
+
+    <com.shengshi.base.widget.roundimageview.CircleImageView
+        android:id="@+id/activitycircle_listitem_rankingtv_iv"
+        android:layout_width="45dip"
+        android:layout_height="45dip"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="7dip"
+        android:layout_marginRight="7dip"
+        android:gravity="center_vertical"
+        android:scaleType="centerCrop"
+        android:src="@drawable/avatar" />
+
+    <LinearLayout
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="7dip"
+        android:layout_weight="1"
+        android:focusable="false"
+        android:gravity="left|center_vertical"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/activitycircle_listitem_nametv"
+            style="@style/titletext" />
+
+        <TextView
+            android:id="@+id/activitycircle_listitem_leveltv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/honor_bg"
+            android:gravity="center"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/activitycircle_listitem_scoretv"
+            style="@style/titletext_sub" />
+    </LinearLayout>
+
+    <!--   <ImageView
+          android:id="@+id/activitycircle_listitem_joiniv"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center_vertical"
+          android:layout_marginRight="7dip"
+          android:background="@drawable/add" /> -->
+    <TextView
+        android:id="@+id/secondlistitem_join_canclebtn"
+        android:layout_width="70dip"
+        android:layout_height="30dip"
+        android:layout_gravity="center_vertical"
+        android:layout_marginRight="7dip"
+        android:gravity="center"
+        android:textSize="@dimen/design_size_24"
+        android:textColor="@color/sub_heading_text"
+        android:background="@drawable/btn_gray" />
+
+</LinearLayout>

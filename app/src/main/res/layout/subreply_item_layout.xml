@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ufun_subreply_activity_txt"
+    style="@style/titletext_sub"
+    android:paddingLeft="67dp"></TextView>

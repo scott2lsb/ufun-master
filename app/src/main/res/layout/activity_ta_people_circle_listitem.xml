@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/circle_ll_items"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <com.shengshi.base.widget.roundimageview.CircleImageView
+        android:id="@+id/circle_icon"
+        android:layout_width="45dip"
+        android:layout_height="45dip"
+        android:scaleType="centerCrop"
+        android:src="@drawable/avatar" />
+
+    <TextView
+        android:id="@+id/circle_qname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dip"
+        android:text="吃货群"
+        android:textColor="@color/headding_text"
+        android:textSize="@dimen/design_size_24" />
+
+</LinearLayout>

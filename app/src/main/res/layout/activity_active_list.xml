@@ -1,0 +1,91 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".ActiveListActivity">
+
+    <include layout="@layout/ufun_topbar" />
+
+    <include layout="@layout/widget_loading_bar_layout" />
+
+    <com.shengshi.base.widget.xlistview.XListView
+        android:id="@+id/activity_list_xlist"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:divider="@color/line_color"
+        android:dividerHeight="0.3dip"
+        android:fadingEdge="none"
+        android:footerDividersEnabled="false"
+        android:headerDividersEnabled="true"
+        android:overScrollMode="never"
+        android:scrollbars="none" />
+
+    <LinearLayout
+        android:id="@+id/activitycircle_Lv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:background="@color/line_color" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dip"
+            android:orientation="horizontal">
+
+            <com.shengshi.base.widget.roundimageview.CircleImageView
+                android:id="@+id/activitycircle_iv"
+                android:layout_width="45dip"
+                android:layout_height="45dip"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="7dip"
+                android:layout_marginRight="7dip"
+                android:gravity="center_vertical"
+                android:scaleType="centerCrop"
+                android:src="@drawable/avatar" />
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_margin="7dip"
+                android:layout_weight="1"
+                android:focusable="false"
+                android:gravity="left|center_vertical"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/activitycircle_unametv"
+                    style="@style/titletext" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/activitycircle_leveltv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/honor_bg"
+                        android:gravity="center"
+                        android:paddingLeft="3dip"
+                        android:paddingRight="3dip"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:id="@+id/activitycircle_scoretv"
+                        style="@style/titletext_sub"
+                        android:layout_marginLeft="7dip" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

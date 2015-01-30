@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/chat_list_item_to"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_chat_list_item_to_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/main_tab_tv_grey"
+        android:textSize="@dimen/design_size_20" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="10dp"
+        android:gravity="right"
+        android:orientation="horizontal">
+
+        <ProgressBar
+            android:id="@+id/ufun_chat_list_item_to_sending"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginRight="10dp"
+            android:indeterminate="false"
+            android:indeterminateDrawable="@drawable/progress_loading"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_chat_list_item_to_content"
+            style="@style/white_title.16sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/bubble_to"
+            android:gravity="center_horizontal"
+            android:maxWidth="@dimen/chatcontent_width_200"
+            android:paddingBottom="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="15dp"
+            android:paddingTop="10dp"
+            android:visibility="gone" />
+
+        <!--
+             <ImageView
+            android:id="@+id/iv_chat_list_item_to_picture"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/bubble_to"
+            android:paddingBottom="5dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="12dp"
+            android:paddingTop="5dp"
+            android:scaleType="center"
+            android:src="@drawable/pic_default_medium"
+            android:visibility="gone" />
+        -->
+
+        <com.shengshi.base.widget.roundimageview.CircleImageView
+            android:id="@+id/iv_chat_list_item_to_usericon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="4dp" />
+    </LinearLayout>
+
+</LinearLayout>

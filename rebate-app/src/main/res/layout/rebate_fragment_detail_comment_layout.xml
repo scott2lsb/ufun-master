@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/rebate_listitem_bg_selector"
+    android:orientation="vertical">
+
+    <include layout="@layout/rebate_widget_line_layout" />
+
+    <RelativeLayout
+        android:id="@+id/rebate_detail_comment_layout"
+        android:clickable="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="15dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="15dp"
+        android:background="@drawable/rebate_listitem_bg_selector">
+
+        <RatingBar
+            android:id="@+id/rebate_comment_ratingBar"
+            style="@style/green_ratingbar_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:numStars="5"
+            android:rating="3.5" />
+
+        <TextView
+            android:id="@+id/rebate_comment_count"
+            style="@style/black_title.selector.16sp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:drawableRight="@drawable/rebate_arrow_left_more"
+            android:gravity="center_vertical" />
+    </RelativeLayout>
+
+    <include layout="@layout/rebate_widget_line_layout" />
+
+</LinearLayout>

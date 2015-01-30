@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mine_top_bg"
+    android:orientation="vertical">
+
+    <include layout="@layout/ufun_topbar" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:fadingEdge="none"
+        android:fillViewport="true"
+        android:overScrollMode="never"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.shengshi.base.widget.roundimageview.CircleImageView
+                android:id="@+id/register_icon"
+                android:layout_width="70dip"
+                android:layout_height="70dip"
+                android:layout_gravity="center"
+                android:layout_marginBottom="20dip"
+                android:layout_marginTop="20dip"
+                android:scaleType="fitXY"
+                android:src="@drawable/avatar"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:paddingLeft="10dip"
+                android:paddingRight="10dip"
+                android:paddingTop="10dip">
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dip"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:id="@+id/register_mobile_textview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="5dip"
+                        android:text="@string/register_mobile"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/design_size_24" />
+
+                    <EditText
+                        android:id="@+id/register_mobile"
+                        style="@style/edittext"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="15dip"
+                        android:layout_toRightOf="@+id/register_mobile_textview"
+                        android:hint="@string/login_mobile_hit"
+                        android:inputType="phone"
+                        android:maxLength="15"
+                        android:singleLine="true" />
+                </RelativeLayout>
+
+                <View style="@style/view_line" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dip"
+                    android:gravity="center_vertical">
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/register_verify_textview"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="5dip"
+                            android:text="@string/register_verify"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/design_size_24" />
+
+                        <EditText
+                            android:id="@+id/register_verify"
+                            style="@style/edittext"
+                            android:layout_marginLeft="15dip"
+                            android:layout_toLeftOf="@+id/register_verify_btn"
+                            android:layout_toRightOf="@+id/register_verify_textview"
+                            android:hint="@string/register_verify_hit"
+                            android:inputType="phone"
+                            android:maxLength="11"
+                            android:singleLine="true" />
+
+                        <Button
+                            android:id="@+id/register_verify_btn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dip"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="10dip"
+                            android:background="@drawable/btn_blue"
+                            android:paddingLeft="5dip"
+                            android:paddingRight="5dip"
+                            android:text="@string/register_verify_get"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/design_size_24" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <View style="@style/view_line" />
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dip"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:id="@+id/register_nickname_textview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="5dip"
+                        android:text="@string/register_nickname"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/design_size_24" />
+
+                    <EditText
+                        android:id="@+id/register_nickname"
+                        style="@style/edittext"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="25dip"
+                        android:layout_toRightOf="@+id/register_nickname_textview"
+                        android:hint="@string/register_nickname_hit"
+                        android:maxLength="15"
+                        android:singleLine="true" />
+                </RelativeLayout>
+
+                <View style="@style/view_line" />
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dip"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:id="@+id/register_password_textview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="5dip"
+                        android:text="@string/login_pwd_hit"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/design_size_24" />
+
+                    <EditText
+                        android:id="@+id/register_password"
+                        style="@style/edittext"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="25dip"
+                        android:layout_toRightOf="@+id/register_password_textview"
+                        android:hint="@string/register_pwd_hit"
+                        android:inputType="textPassword"
+                        android:singleLine="true" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/register_btn"
+                android:layout_width="fill_parent"
+                android:layout_height="50dip"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:layout_marginTop="20dip"
+                android:background="@drawable/btn_blue"
+                android:text="@string/register"
+                android:textColor="@color/white"
+                android:textSize="@dimen/design_size_28" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

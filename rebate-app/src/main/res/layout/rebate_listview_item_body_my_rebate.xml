@@ -1,0 +1,57 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/my_rebate_body"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:gravity="center_vertical">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center_vertical"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/gray_title.16sp"
+                android:text="@string/rebate_my_consumption_amount" />
+
+            <TextView
+                android:id="@+id/consume_amount"
+                style="@style/gray_title.20sp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="1px"
+            android:layout_height="65dp"
+            android:layout_gravity="center"
+            android:background="@color/line_color" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/rebate_get_rebate_tip"
+                style="@style/gray_title.16sp"
+                android:text="@string/rebate_my_will_get_rebate" />
+
+            <TextView
+                android:id="@+id/rabate_amount"
+                style="@style/gray_title.20sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <include layout="@layout/rebate_widget_line_layout" />
+
+</LinearLayout>

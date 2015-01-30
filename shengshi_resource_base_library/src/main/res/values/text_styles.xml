@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="black_title">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="black_title.10sp">
+        <item name="android:textSize">10sp</item>
+    </style>
+
+    <style name="black_title.12sp">
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="black_title.14sp">
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="black_title.16sp">
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="black_title.18sp">
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="black_title.20sp">
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="black_title.22sp">
+        <item name="android:textSize">22sp</item>
+    </style>
+
+    <style name="black_title.24sp">
+        <item name="android:textSize">24sp</item>
+    </style>
+
+    <style name="black_title.36sp">
+        <item name="android:textSize">36sp</item>
+    </style>
+
+    <style name="black_title.selector">
+        <item name="android:duplicateParentState">true</item>
+        <item name="android:textColor">@color/black_text_selector</item>
+    </style>
+
+    <style name="black_title.selector.12sp">
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="black_title.selector.14sp">
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="black_title.selector.16sp">
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="black_title.selector.18sp">
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="black_title.selector.20sp">
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="black_title.selector.22sp">
+        <item name="android:textSize">22sp</item>
+    </style>
+
+    <style name="black_title.selector.24sp">
+        <item name="android:textSize">24sp</item>
+    </style>
+
+    <style name="black_title.selector.28sp">
+        <item name="android:textSize">28sp</item>
+    </style>
+
+    <style name="white_title">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="white_title.10sp">
+        <item name="android:textSize">10sp</item>
+    </style>
+
+    <style name="white_title.12sp">
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="white_title.14sp">
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="white_title.16sp">
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="white_title.18sp">
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="white_title.20sp">
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="white_title.22sp">
+        <item name="android:textSize">22sp</item>
+    </style>
+
+    <style name="white_title.24sp">
+        <item name="android:textSize">24sp</item>
+    </style>
+
+    <style name="white_title.26sp">
+        <item name="android:textSize">26sp</item>
+    </style>
+
+    <style name="white_title.40sp">
+        <item name="android:textSize">40sp</item>
+    </style>
+
+    <style name="white_title.42sp">
+        <item name="android:textSize">42sp</item>
+    </style>
+
+    <style name="green_title">
+        <item name="android:textColor">@color/light_green</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="green_title.14sp">
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="green_title.16sp">
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="green_title.18sp">
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="green_title.20sp">
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="green_title.24sp">
+        <item name="android:textSize">24sp</item>
+    </style>
+
+    <style name="green_title.26sp">
+        <item name="android:textSize">26sp</item>
+    </style>
+
+    <style name="green_title.30sp">
+        <item name="android:textSize">30sp</item>
+    </style>
+
+    <style name="green_title.36sp">
+        <item name="android:textSize">36sp</item>
+    </style>
+
+    <style name="green_title.38sp">
+        <item name="android:textSize">38sp</item>
+    </style>
+
+    <style name="red_title">
+        <item name="android:textColor">@color/dark_red</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="red_title.14sp">
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="red_title.16sp">
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="red_title.18sp">
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="red_title.20sp">
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="red_title.22sp">
+        <item name="android:textSize">22sp</item>
+    </style>
+
+    <style name="red_title.24sp">
+        <item name="android:textSize">24sp</item>
+    </style>
+
+    <style name="red_title.28sp">
+        <item name="android:textSize">28sp</item>
+    </style>
+
+    <style name="red_title.30sp">
+        <item name="android:textSize">30sp</item>
+    </style>
+
+    <style name="red_title.32sp">
+        <item name="android:textSize">32sp</item>
+    </style>
+
+    <style name="red_title.34sp">
+        <item name="android:textSize">34sp</item>
+    </style>
+
+    <style name="red_title.36sp">
+        <item name="android:textSize">36sp</item>
+    </style>
+
+    <style name="red_title.38sp">
+        <item name="android:textSize">38sp</item>
+    </style>
+
+    <style name="red_title.40sp">
+        <item name="android:textSize">40sp</item>
+    </style>
+
+    <style name="red_title.42sp">
+        <item name="android:textSize">42sp</item>
+    </style>
+
+    <style name="gray_title">
+        <item name="android:textColor">@color/gray_text</item>
+        <!-- dark_gray -->
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="gray_title.10sp">
+        <item name="android:textSize">10sp</item>
+    </style>
+
+    <style name="gray_title.12sp">
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="gray_title.14sp">
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="gray_title.16sp">
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="gray_title.18sp">
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="gray_title.20sp">
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="gray_title.22sp">
+        <item name="android:textSize">22sp</item>
+    </style>
+
+    <style name="gray_title.24sp">
+        <item name="android:textSize">24sp</item>
+    </style>
+
+    <style name="gray_title.26sp">
+        <item name="android:textSize">26sp</item>
+    </style>
+
+    <style name="gray_title.28sp">
+        <item name="android:textSize">28sp</item>
+    </style>
+
+    <style name="gray_title.30sp">
+        <item name="android:textSize">30sp</item>
+    </style>
+
+    <style name="gray_title.38sp">
+        <item name="android:textSize">38sp</item>
+    </style>
+
+    <style name="gray_title.selector">
+        <item name="android:duplicateParentState">true</item>
+        <item name="android:textColor">@color/gray_text_selector</item>
+    </style>
+
+    <style name="gray_title.selector.12sp">
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="gray_title.selector.14sp">
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="gray_title.selector.16sp">
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="gray_title.selector.18sp">
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="gray_title.selector.20sp">
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="gray_title.selector.22sp">
+        <item name="android:textSize">22sp</item>
+    </style>
+
+    <style name="gray_title.selector.24sp">
+        <item name="android:textSize">24sp</item>
+    </style>
+
+    <style name="gray_title.selector.28sp">
+        <item name="android:textSize">28sp</item>
+    </style>
+
+</resources>

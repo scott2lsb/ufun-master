@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/chat_list_item_from"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_chat_list_item_from_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/main_tab_tv_grey"
+        android:textSize="@dimen/design_size_20"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <com.shengshi.base.widget.roundimageview.CircleImageView
+            android:id="@+id/iv_chat_list_item_from_usericon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="4dp" />
+
+        <TextView
+            android:id="@+id/tv_chat_list_item_from_content"
+            style="@style/black_title.16sp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/bubble_from"
+            android:gravity="center"
+            android:maxWidth="@dimen/chatcontent_width_200"
+            android:paddingBottom="10dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="10dp"
+            android:paddingTop="10dp"
+            android:visibility="gone" />
+        <!--
+        <ImageView
+            android:id="@+id/iv_chat_list_item_from_picture"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/bubble_from"
+            android:paddingBottom="5dp"
+            android:paddingLeft="12dp"
+            android:paddingRight="5dp"
+            android:paddingTop="5dp"
+            android:scaleType="center"
+            android:src="@drawable/pic_default_medium"
+            android:visibility="gone" />
+        -->
+    </LinearLayout>
+
+</LinearLayout>

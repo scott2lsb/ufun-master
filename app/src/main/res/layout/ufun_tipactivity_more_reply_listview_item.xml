@@ -1,0 +1,43 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingBottom="10dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="10dp"
+    android:background="@color/light_gray">
+
+    <include layout="@layout/ufun_activity_tip_content_publisher" />
+
+    <TextView
+        android:id="@+id/lifecircle_tipactivity_replay_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="60dp"
+        android:textColor="@color/black"
+        android:textSize="@dimen/design_size_24" />
+
+    <TextView
+        android:id="@+id/lifecircle_tip_replay_1st"
+        style="@style/titletext_sub"
+        android:layout_marginLeft="60dp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/lifecircle_tip_replay_2nd"
+        style="@style/titletext_sub"
+        android:layout_marginLeft="60dp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/lifecircle_more_reply"
+        style="@style/titletext_sub"
+        android:layout_gravity="right"
+        android:visibility="gone" />
+
+    <!--  <View
+         style="@style/view_line"
+         android:layout_gravity="bottom" /> -->
+
+</LinearLayout>

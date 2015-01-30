@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/lifecircle_msg_main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp">
+
+        <FrameLayout
+            android:id="@+id/lifecircle_message_avatar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dip"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dip">
+
+            <com.shengshi.base.widget.roundimageview.CircleImageView
+                android:id="@+id/lifecircle_message_icon_iv"
+                android:layout_width="50dip"
+                android:layout_height="50dip"
+                android:src="@drawable/avatar"
+                android:scaleType="centerCrop" />
+
+            <TextView
+                android:id="@+id/lifecircle_message_tips_tv"
+                android:layout_width="14dip"
+                android:layout_height="14dip"
+                android:layout_gravity="right"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/icon_indicate_message_new"
+                android:gravity="center"
+                android:text="2"
+                android:textColor="@color/white"
+                android:textSize="@dimen/design_size_16"
+                android:visibility="gone" />
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/lifecircle_from_name"
+            style="@style/titletext"
+            android:layout_alignTop="@id/lifecircle_message_avatar"
+            android:layout_marginLeft="10dip"
+            android:layout_toRightOf="@id/lifecircle_message_avatar" />
+
+        <TextView
+            android:id="@+id/lifecircle_simple_content"
+            style="@style/titletext_sub"
+            android:layout_below="@id/lifecircle_from_name"
+            android:layout_marginLeft="10dip"
+            android:layout_toRightOf="@id/lifecircle_message_avatar" />
+
+        <TextView
+            android:id="@+id/lifecircle_chat_time"
+            style="@style/titletext_sub"
+            android:layout_width="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dip"
+            android:layout_marginTop="10dip"
+            android:gravity="top"
+            android:singleLine="true" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0.3dp"
+        android:layout_below="@id/lifecircle_msg_main"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/line_color" />
+
+</RelativeLayout>

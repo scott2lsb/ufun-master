@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="rebate_app_name">返利卡</string>
+
+    <!-- 首页 -->
+    <string name="rebate_rmb_icon">¥</string>
+    <string name="home_rebate_today_tip">今日推荐</string>
+    <string name="home_rebate_all_half_off">全部五折</string>
+    <string name="home_common_rebate_shop_tip">返利商家</string>
+    <string name="rebate_money_tip">卡内余额(元)</string>
+    <string name="rebate_money_total">为卡友返利总计(元)</string>
+    <string name="rebate_filter_category">类目</string>
+    <string name="rebate_filter_area">区域</string>
+    <string name="rebate_filter_sort">排序</string>
+    <string name="rebate_top_bar_edit_tip">找商家</string>
+
+    <!-- 搜索 -->
+    <string name="rebate_search_hint_tip">请输入搜索关键字</string>
+    <string name="rebate_search_no_data">找不到搜索结果</string>
+
+    <!-- 详情 -->
+    <string name="rebate_detail">返利详情</string>
+    <string name="rebate_comment_cout">%1$d个评价</string>
+    <string name="rebate_shop_latest_tip">距离最近</string>
+    <string name="rebate_detail_all_shop_count_tips">查看全部%1$d家门店</string>
+    <string name="rebate_detail_code_tips">请向服务员出示此返利码</string>
+    <string name="rebate_detail_btn_order">买单领返利</string>
+
+    <!-- 订单返利 -->
+    <string name="rebate_pay_waitting_tip">请等待服务员操作完成后刷新</string>
+    <string name="rebate_pay_waitting_btn_text">刷新</string>
+    <string name="rebate_pay_rebate_money_tip">本单消费金额(元)</string>
+    <string name="rebate_pay_rebate_score_tip">支付后可获返利(元)</string>
+    <string name="rebate_pay_spend">消费金额</string>
+    <string name="rebate_pay_use_account_money">使用返利卡余额支付</string>
+    <string name="rebate_account_money">余额￥%1$s</string>
+    <string name="rebate_pay_money">还需支付</string>
+    <string name="rebate_pay_card_balance">我的同城卡余额:￥%1$s</string>
+    <string name="rebate_pay_alipay">支付宝支付</string>
+    <string name="rebate_pay_wechat">微信支付</string>
+    <string name="rebate_pay_btn_text">同城卡支付</string>
+    <string name="pay_wechat_result_callback_msg" formatted="false">微信支付结果：%s</string>
+    <string name="pay_wechat_result_user_cancel">取消支付</string>
+    <string name="pay_alipay_result_success">支付宝支付成功</string>
+    <string name="pay_alipay_result_failed">支付宝支付失败</string>
+    <string name="pay_wechat_result_success">微信支付成功</string>
+    <string name="pay_wechat_result_failed">微信支付失败</string>
+    <string name="rebate_is_anonymous">匿名评价</string>
+    <string name="rebate_comment_nothingtosay">没啥好说的</string>
+    <string name="rebate_comment_post_content">&#160;&#160;发布评价&#160;&#160;</string>
+    <string name="rebate_rating_text">评分</string>
+    <string name="rebate_entercard">已进入您的返利卡</string>
+
+    <!-- 同城卡界面 -->
+    <string name="rebate_card_title">同城卡</string>
+    <string name="rebate_card_no_pay">支付</string>
+    <string name="rebate_card_pay_record">记录</string>
+    <string name="rebate_card_balance">卡内余额</string>
+    <string name="rebate_card_all_money">返利总额</string>
+
+    <!-- 我的返利界面 -->
+    <string name="rebate_my_consumption_amount">消费金额(元)</string>
+    <string name="rebate_my_will_get_rebate">支付即获返利(元)</string>
+    <string name="rebate_my_get_rebate">获得返利(元)</string>
+    <string name="rebate_my_waitting_for_pay">等待买单</string>
+    <string name="rebate_my_pay">立即买单</string>
+    <string name="rebate_my_cancel_order">取消本单</string>
+    <string name="rebate_add_comment">添加评价</string>
+    <string name="rebate_default_comment">默认好评</string>
+
+    <!-- 发布评论 -->
+    <string name="rebate_comment_edit_tip">请输入评价内容</string>
+    <string name="rebate_comment_get_money_tip">返利已存入您的同城卡(元)</string>
+    <string name="rebate_comment_card_balance">同城卡余额(元)</string>
+
+    <string name="rebate_launchapp_error">包名、类名配置错误，应用启动失败</string>
+    <string name="rebate_load_more_complete">已经到底了，没有更多信息了。</string>
+
+
+</resources>

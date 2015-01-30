@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/addcard_secondlistitem"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/listitembg"
+    android:orientation="vertical"
+    android:padding="10dip">
+
+    <TextView
+        android:id="@+id/puretext_listitem_title"
+        style="@style/titletext"
+        android:maxLines="2" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="7dip"
+        android:paddingTop="7dip">
+
+        <TextView
+            android:id="@+id/puretext_listitem_uname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/sub_heading_text"
+            android:textSize="@dimen/design_size_20" />
+
+        <TextView
+            android:id="@+id/puretext_listitem_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="7dip"
+            android:textColor="@color/sub_heading_text"
+            android:textSize="@dimen/design_size_20" />
+
+        <ImageView
+            android:id="@+id/puretext_listitem_ifpic"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="3dip"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/icon_input_photo"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/puretext_listitem_count"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:textColor="@color/sub_heading_text"
+            android:textSize="@dimen/design_size_20" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:JazzyListView="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_f8f8f8"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/top_layout"
+        layout="@layout/rebate_home_search_topbar" />
+
+    <include layout="@layout/widget_loading_bar_layout" />
+
+    <com.shengshi.base.widget.xlistview.XListView
+        android:id="@id/mGeneralListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        JazzyListView:effect="grow"
+        JazzyListView:max_velocity="0"
+        JazzyListView:only_animate_fling="false"
+        JazzyListView:only_animate_new_items="false"
+        android:cacheColorHint="@color/transparent"
+        android:divider="@null"
+        android:drawSelectorOnTop="false"
+        android:fadingEdgeLength="0dp"
+        android:listSelector="@android:color/transparent"
+        android:scrollbars="none" />
+
+</LinearLayout>

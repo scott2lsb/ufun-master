@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/rebate_listview_header_widget_home_card_top_layout" />
+
+    <include layout="@layout/rebate_widget_line_layout" />
+
+    <!-- <include layout="@layout/rebate_listview_header_widget_home_card_filter_layout" /> -->
+
+    <com.shengshi.rebate.ui.home.popup.ExpandTabView
+        android:id="@+id/rebate_home_expandtabview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white" />
+
+    <include layout="@layout/rebate_widget_line_layout" />
+
+</LinearLayout>

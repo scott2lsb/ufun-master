@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:background="@color/white"
+    android:padding="7dip"
+    android:descendantFocusability="blocksDescendants">
+
+    <Button
+        android:id="@+id/tagitem_name"
+        android:layout_width="fill_parent"
+        android:layout_height="35dip"
+        android:gravity="center"
+        android:clickable="false"
+        android:textSize="@dimen/design_size_24"
+        android:background="@drawable/line_whitbg"
+        android:textColor="@color/black" />
+
+
+    <Button
+        android:id="@+id/tagitem_select"
+        android:layout_width="15dip"
+        android:layout_height="15dip"
+        android:layout_gravity="bottom|right"
+        android:background="@drawable/iconselect_whitebg"
+        android:clickable="false" />
+
+
+</FrameLayout>

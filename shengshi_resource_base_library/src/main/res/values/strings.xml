@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- xListview -->
+    <string name="xlistview_header_hint_normal">下拉刷新</string>
+    <string name="xlistview_header_hint_ready">松开刷新数据</string>
+    <string name="xlistview_header_hint_loading">正在加载&#8230;</string>
+    <string name="xlistview_header_last_time">上次更新时间：</string>
+    <string name="xlistview_footer_hint_normal">查看更多</string>
+    <string name="xlistview_footer_hint_ready">松开载入更多</string>
+
+    <!-- 加载请求 -->
+    <string name="common_loading_no_dots">加载中</string>
+    <!-- 没有三个小数点 -->
+    <string name="common_loading">加载中&#8230;</string>
+    <string name="common_loading_fail_no_dots">加载失败，点此重新加载</string>
+
+    <!-- 通用 -->
+    <string name="goback">返回上一页</string>
+    <string name="default_no_data">暂无数据</string>
+    <string name="common_http_loading">数据提交中，请稍候&#8230;</string>
+    <string name="dialog_title_default">提示</string>
+    <string name="btn_sure">确定</string>
+    <string name="btn_cancle">取消</string>
+    <string name="btn_download">下载</string>
+    <string name="btn_yes">是</string>
+    <string name="btn_no">否</string>
+
+    <!-- 网络请求 -->
+    <string name="net_loading_server_error">服务器异常，请稍候再试</string>
+    <string name="net_loading_web_no_find">找不到该网页</string>
+
+
+</resources>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rebate_listview_item_normal_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/home_normal_tip_divider_line_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:layout_marginBottom="10dp"
+        android:background="@color/line_color" />
+
+    <include layout="@layout/rebate_widget_line_layout" />
+
+    <!-- 返利商家标识 -->
+
+    <TextView
+        android:id="@+id/mHomeNormalTip"
+        style="@style/black_title.16sp"
+        android:layout_height="42dp"
+        android:drawableLeft="@drawable/rebate_shop_icon"
+        android:drawablePadding="2dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:text="@string/home_common_rebate_shop_tip"
+        android:visibility="gone" />
+
+    <!-- 返利商家标识 和 返利商家名称 分隔线   2014.12.12改版了，设置不可见 -->
+
+    <TextView
+        android:id="@+id/home_normal_tip_and_brand_name_divider_line_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:background="@color/line_color"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:clickable="true">
+
+        <!-- 商家名称 -->
+
+        <TextView
+            android:id="@+id/mHomeNormalBrandName"
+            style="@style/black_title.16sp"
+            android:layout_height="42dp"
+            android:drawableLeft="@drawable/rebate_shop_icon"
+            android:drawablePadding="2dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp" />
+
+        <TextView
+            android:id="@+id/brand_distance"
+            style="@style/gray_title.14sp"
+            android:textColor="@color/dark_gray"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingRight="10dp" />
+    </RelativeLayout>
+
+    <include layout="@layout/rebate_widget_line_layout" />
+
+    <LinearLayout
+        android:id="@+id/mHomeNormalShopServiceContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"></LinearLayout>
+
+</LinearLayout>

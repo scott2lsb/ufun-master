@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rebate_home_card_top_layout"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:clickable="true"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="10dp">
+
+    <ImageView
+        android:id="@+id/rebate_card_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:adjustViewBounds="true"
+        android:contentDescription="@null"
+        android:scaleType="fitXY"
+        android:src="@drawable/rebate_card_bg" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:paddingBottom="5dp"
+        android:paddingRight="10dp">
+
+        <TextView
+            android:id="@+id/card_money_tip"
+            style="@style/white_title.14sp"
+            android:layout_gravity="right"
+            android:layout_marginBottom="-5dp"
+            android:paddingRight="3dp"
+            android:text="@string/rebate_money_tip" />
+
+        <RelativeLayout
+            android:id="@+id/card_money_flag_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.shengshi.base.widget.RunningTextView
+                android:id="@+id/card_money"
+                style="@style/white_title.40sp"
+                android:layout_alignParentRight="true"
+                android:singleLine="true" />
+
+            <TextView
+                android:id="@+id/card_doller_icon"
+                style="@style/white_title.14sp"
+                android:layout_toLeftOf="@+id/card_money"
+                android:paddingRight="2dp"
+                android:paddingTop="10dp"
+                android:text="@string/rebate_rmb_icon"
+                android:textStyle="bold"
+                android:visibility="gone" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>
